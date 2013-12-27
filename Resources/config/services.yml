@@ -3,8 +3,8 @@ parameters:
 
 services:
 ## Menu items added with event listener
-    wordpress_menu_subscriber:
-        class: ACS\ACSPanelWordpressBundle\Event\Subscribers\WordpressMenuSubscriber
+    dynhost_menu_subscriber:
+        class: ACS\ACSPanelDynHost\ACSACSPanelDynHostBundle\Event\Subscribers\DynHostMenuSubscriber
         arguments: ['@event_dispatcher']
         tags:
             - {name: kernel.event_subscriber}

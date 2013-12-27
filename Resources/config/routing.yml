@@ -1,7 +1,8 @@
-acsacs_panel_wordpress_list:
-    pattern:  /wordpress/
-    defaults: { _controller: ACSACSPanelWordpressBundle:Default:index }
-ACSACSPanelWordpressBundle_wpsetup:
-    resource: "@ACSACSPanelWordpressBundle/Resources/config/routing/wpsetup.yml"
-    prefix:   /wpsetup
+acsacs_dynhost_list:
+    pattern:  /dynhosts/
+    defaults: { _controller: ACSACSPanelDynHostBundle:DynHostController:index }
+
+ACSACSPanelDynHostBundle_dynhostsetup:
+    resource: "@ACSACSPanelDynHostBundle/Resources/config/routing/dynhostsetup.yml"
+    prefix:   /dynhostsetup
 
