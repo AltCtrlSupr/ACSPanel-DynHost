@@ -1,0 +1,37 @@
+ACS\ACSPanelDynHostBundle\Entity\DynHostRecord:
+    type: entity
+    table: dynhost_record
+    gedmo:
+        loggable: {}
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        enabled:
+            type: boolean
+            nullable: true 
+            gedmo:
+                - versioned
+
+    manyToOne:
+        user:
+            targetEntity: ACS\ACSPanelBundle\Entity\FosUser
+            cascade: {  }
+            inversedBy: null
+            joinTable: null
+            orderBy: null
+            gedmo:
+                - versioned
+            joinColumn:
+                onDelete: CASCADE
+    oneToOne:
+        dnsrecord:
+            targetEntity: ACS\ACSPanelBundle\Entity\DnsRecord
+            gedmo:
+                - versioned
+            joinColumn:
+                onDelete: CASCADE
+
+    lifecycleCallbacks:

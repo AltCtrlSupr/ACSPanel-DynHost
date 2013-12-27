@@ -1,0 +1,37 @@
+ACS\ACSPanelDynHostBundle\Entity\DynHostSetup:
+    type: entity
+    table: dynhost_setup
+    repositoryClass: ACS\ACSPanelDynHostBundle\Model\DynHostSetupRepository
+    gedmo:
+        loggable: {}
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        public:
+            type: boolean
+            nullable: true 
+            gedmo:
+                - versioned
+
+    oneToMany:
+        users:
+            targetEntity: FosUser
+            cascade: [ persist ]
+            gedmo:
+                - versioned
+
+    manyToOne:
+        domain:
+            targetEntity: Domain 
+            cascade: {  }
+            joinTable: null
+            orderBy: null
+            gedmo:
+                - versioned
+            joinColumn:
+                onDelete: CASCADE
+
+    lifecycleCallbacks:
