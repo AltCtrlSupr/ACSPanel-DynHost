@@ -20,6 +20,7 @@ ACS\ACSPanelDynHostBundle\Entity\DynHostSetup:
         users:
             targetEntity: FosUser
             cascade: [ persist ]
+            mappedBy: dynhost_setups
             gedmo:
                 - versioned
 
