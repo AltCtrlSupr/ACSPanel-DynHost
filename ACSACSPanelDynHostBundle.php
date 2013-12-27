@@ -1,10 +1,9 @@
 <?php
 
-namespace ACS\ACSPanelDynHost;
+namespace ACS\ACSPanelDynHostBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class ACSACSPanelDynHostBundle extends Bundle
 {
-
 }

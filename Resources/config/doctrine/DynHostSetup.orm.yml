@@ -1,7 +1,7 @@
 ACS\ACSPanelDynHostBundle\Entity\DynHostSetup:
     type: entity
     table: dynhost_setup
-    repositoryClass: ACS\ACSPanelDynHostBundle\Model\DynHostSetupRepository
+    #repositoryClass: ACS\ACSPanelDynHostBundle\Model\DynHostSetupRepository
     gedmo:
         loggable: {}
     fields:

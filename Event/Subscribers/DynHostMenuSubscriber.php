@@ -1,5 +1,5 @@
 <?php
-namespace ACS\ACSPanelDynHost\ACSACSPanelDynHostBundle\Event\Subscribers;
+namespace ACS\ACSPanelDynHostBundle\Event\Subscribers;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use ACS\ACSPanelBundle\Event\FilterMenuEvent;
