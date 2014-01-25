@@ -1,5 +1,5 @@
 {
-    "name": "acs/paneldynhost",
+    "name": "acs/ACSPanelDynHostBundle",
     "description": "Dynhost service creation for ACSPanel",
     "type": "library",
     "autoload": {
