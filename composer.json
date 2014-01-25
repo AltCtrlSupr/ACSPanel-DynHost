@@ -1,16 +1,8 @@
 {
     "name": "acs/paneldynhost",
     "description": "Dynhost service creation for ACSPanel",
+    "keywords": ["dynamic domain","acspanel"],
     "type": "library",
-    "autoload": {
-        "psr-0": { "ACS\\ACSPanelDynHost": "" }
-    },
-    "require": {
-        "php": ">=5.3.3"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "3.7.*"
-    },
     "authors": [
         {
             "name": "Genar Trias",
@@ -18,6 +10,16 @@
             "homepage": "http://genar.me/"
         }
     ],
+    "autoload": {
+        "psr-0": { "ACS\\ACSPanelDynHostBundle": "" }
+    },
+    "target-dir": "acs/paneldynhost",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
     "autoload": {
         "classmap": [""]
     }
