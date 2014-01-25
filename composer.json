@@ -1,9 +1,9 @@
 {
-    "name": "acs/ACSPanelDynHostBundle",
+    "name": "acs/paneldynhost",
     "description": "Dynhost service creation for ACSPanel",
     "type": "library",
     "autoload": {
-        "psr-0": { "": "" }
+        "psr-0": { "ACS\\ACSPanelDynHost": "" }
     },
     "require": {
         "php": ">=5.3.3"
